@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="master">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <title>Templates FREE - Jumbotron</title>
+  <title>Qauaq Turismo</title>
+  <link rel="icon" type="image/png" href="img/Q.png" />
   <style>
     body {
       margin: 0;
       padding: 0;
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300">
+  <link rel="stylesheet" type="text/css" href="https:use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https:fonts.googleapis.com/css?family=Roboto:300">
   <link rel="stylesheet" type="text/css" href="400">
   <link rel="stylesheet" type="text/css" href="500">
   <link rel="stylesheet" type="text/css" href="700&amp;display=swap">
   <link rel="stylesheet" type="text/css"
-    href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.13.0/css/bootstrap.min.css">
+    href="https:mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.13.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css"
-    href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.13.0/css/mdb.min.css">
+    href="https:mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.13.0/css/mdb.min.css">
   <link rel="stylesheet" type="text/css" href="css\style.css">
   
   <style>
@@ -41,11 +40,11 @@
     }
 
     .navbar {
-      background-color: #3b295a;
+      background-color: "blue-text";
     }
 
     footer.page-footer {
-      background-color: #3b295a;
+      background-color:"blue-text";
       margin-top: 2rem;
     }
 
@@ -60,9 +59,10 @@
 
 
 </head>
+
 <body>
 
-    <!--Navigation-->
+    <!--Barra Navegación-->
     <header>
 
 
@@ -70,8 +70,8 @@
       <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
         <div class="container">
     
-          <!-- Brand -->
-          <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+          <!-- Marca -->
+          <a class="navbar-brand waves-effect" href="index.html">
             <strong class="blue-text">Qauaq</strong>
           </a>
     
@@ -87,13 +87,13 @@
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Actividades</a>
+                <a class="nav-link waves-effect" href="#Actividades">Actividades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Quienes somos</a>
+                <a class="nav-link waves-effect" href="#QuienesSomos">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Contacto</a>
+                <a class="nav-link waves-effect" href="#Contacto">Contacto</a>
               </li>
             </ul>
     
@@ -107,12 +107,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+                <a href="https://www.facebook.com/qauaq" class="nav-link waves-effect" target="_blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+                <a href="https:instagram.com/qauaq" class="nav-link waves-effect" target="_blank">
                   <i class="fab fa-instagram"></i>
                 </a>
               </li>
@@ -126,10 +126,10 @@
       <!-- Navbar -->
     
       </header>
-      <!-- /.Navigation -->
+      <!--Barra Navegación -->
 
   <!-- Full Intro -->
-  <div class="view" style="background-image: url(&apos;https://mdbootstrap.com/img/Photos/Others/images/93.jpg&apos;); background-repeat: no-repeat; background-size: cover;">
+  <div class="view" style="background-image: url('img/mendoza.jpg'); background-repeat: no-repeat; background-size: cover;">
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -145,12 +145,11 @@
         </p>
 
         <p class="mb-4 d-none d-md-block">
-          <strong>Brindando a nuestros visitantes tours pensados para que conmenoren las tierras mendocionas y quieren volver siempre.</strong>
+          <strong>Brindamos tours pensados para que disfruten las tierras mendocionas y quieran volver siempre.</strong>
         </p>
-       
 
-        <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Comenzar la experiencia
-          <i class="fas fa-graduation-cap ml-2"></i>
+        <a href="#Actividades" class="btn btn-outline-white btn-lg">Comenzar la experiencia
+          
         </a>
       </div>
       <!-- Content -->
@@ -164,27 +163,28 @@
 <main>
 
   <!--Actividades-->
+  <a name="Actividades"></a>
   <div class="container">
  
-      
+
     <!--Second row-->
     <div class="row">
       <!--First columnn-->
-      <div class="col-lg-4" th:each="producto : ${productos}">
+      <div class="col-lg-4">
         <!--Card-->
         <div class="card wow fadeIn" data-wow-delay="0.2s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(3).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/alta-montaña.jpg" alt="Puente del Inca, Uspalla, Mendoza, Argentina.">
 
           <!--Card content-->
           <div class="card-body">
             <!--Title-->
-            <h4 class="card-title">${producto.nombre}</h4>
-            
+            <h4 class="card-title">Alta Montaña</h4>
             <!--Text-->
-            <p class="card-text">${producto.descripcion}</p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <p class="card-text">Conocé Potrerillos, desayuná en Entre dos, con los mejores alfajores. 
+              Recorré Uspalla, Puente del Inca, Mirador del Cerro Aconcagua y Las Cuevas.</p>
+            <a href="/altamontana.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -198,7 +198,7 @@
         <div class="card wow fadeIn" data-wow-delay="0.4s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(1).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/city-tour.jpg" alt="Card image cap">
 
           <!--Card content-->
           <div class="card-body">
@@ -206,7 +206,7 @@
             <h4 class="card-title">City Tour</h4>
             <!--Text-->
             <p class="card-text">Recorré la antigua Ciudad Mendoza, Barrio Cívico, la ciudad actual con sus plazas y finalizá en el Cerro de la Gloria.</p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <a href="/citytour.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -221,7 +221,7 @@
         <div class="card wow fadeIn" data-wow-delay="0.6s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(4).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/bodegas-fullday.jpg" alt="Card image cap">
 
           <!--Card content-->
           <div class="card-body">
@@ -229,7 +229,7 @@
             <h4 class="card-title">Bodegas Full Day</h4>
             <!--Text-->
             <p class="card-text">Visitá las bodegas Trapiche, Sin Fin, accedé a degustaciones y almorzá Zucardi con una cocina de autor imperdible.</p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <a href="bodegafullday.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -256,7 +256,7 @@
         <div class="card wow fadeIn" data-wow-delay="0.2s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(3).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/caminosdelvino.jpg" alt="Card image cap">
 
           <!--Card content-->
           <div class="card-body">
@@ -264,7 +264,7 @@
             <h4 class="card-title">Los Caminos del Vino</h4>
             <!--Text-->
             <p class="card-text">Aprendé y compará sobre los diferentes procesos de elaboración vitivinícola por medio de visitas y degustaciones que ofrecemos.</p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <a href="/loscaminosdelvino.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -278,7 +278,7 @@
         <div class="card wow fadeIn" data-wow-delay="0.4s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(1).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/termasdecacheuta.jpg" alt="Card image cap">
 
           <!--Card content-->
           <div class="card-body">
@@ -286,7 +286,7 @@
             <h4 class="card-title">Termas de Cacheuta</h4>
             <!--Text-->
             <p class="card-text">Descubrí las ventajas de las aguas termales mendocinas. A los pies de la montañana en absoluto contacto con la naturaleza. </p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <a href="termasdecacheuta.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -301,7 +301,7 @@
         <div class="card wow fadeIn" data-wow-delay="0.6s">
 
           <!--Card image-->
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(4).jpg" alt="Card image cap">
+          <img class="img-fluid" src="img/rafting.jpg" alt="Card image cap">
 
           <!--Card content-->
           <div class="card-body">
@@ -309,7 +309,7 @@
             <h4 class="card-title">Rafting</h4>
             <!--Text-->
             <p class="card-text"> Poné a prueba tu destreza en una actividad que va a desatar la adrenalina que llevás dentro. En lo alto de Potrerillos</p>
-            <a href="#" class="btn btn-info">Quiero vivirlo</a>
+            <a href="rafting.html" class="btn btn-info">Quiero vivirlo</a>
           </div>
 
         </div>
@@ -323,8 +323,10 @@
 
 </main>
 
-  <!--Main layout-->
+  <!--Quienes somos-->
+  <a name="QuienesSomos"></a>
   <main>
+
     <div class="container">
 
       <!--Section: Main info-->
@@ -336,7 +338,7 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt>
+            <img src="img/teamQauq.jpg" class="img-fluid z-depth-1-half" alt>
 
           </div>
           <!--Grid column-->
@@ -345,28 +347,18 @@
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
+            
+            <h3 class="h3 mb-3">Fundamos Qauaq para cambiar las experiencias turísticas en Mendoza</h3>
+            <p>Te invitamos a disfrutar de la aventura en la cordillera de Los Andes, 
+              experimentar de vinos en destacadas bodegas de la región. </p>
+             <p>  Conocer nuestra gastronomía de primer nivel con sus paisajes inolvidables.
+               Recorrer la Ciudad de Mendoza y verla con otros ojos.
+             </p>
+             <p>Nos especializamos en turismo receptivo, para hacer de Mendoza tu lugar soñado.
+               Queremos que recuerdes nuestras tierras con tanto cariño, que decidas volver una y mil veces más.
+             </p>
+            <p>Animarte a vivir tu viaje como una <strong> #ExperienciaQauaq</strong>.</p>
             <!-- Main heading -->
-
-            <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-grey btn-md">Download
-              <i class="fas fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-grey btn-md">Live demo
-              <i class="fas fa-image ml-1"></i>
-            </a>
 
           </div>
           <!--Grid column-->
@@ -376,379 +368,243 @@
 
       </section>
       <!--Section: Main info-->
+  </main>  
 
-      <hr class="my-5">
+  
+    <!--Contacto-->
+    <a name="Contacto"></a>
+    <main>
+ 
+        <!-- Section: Contact v.3 -->
+        <section class="contact-section my-5">
 
-      <!--Section: Main features & Quick Start-->
-      <section>
+          <!-- Form with header -->
+          <div class="" >
 
-        <h3 class="h3 text-center mb-5">About MDB</h3>
+            <!-- Grid row -->
+            <div class="container">
 
-        <!--Grid row-->
-        <div class="row wow fadeIn">
+              <!-- Grid column -->
+              <div class="col-lg-8">
+                <form id ="contact-form" name="contact-form" action="mail.php" method="POST"  onsubmit="return validateForm()" ></form>
 
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
+                <div class="card-body form">
 
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
+                  <!-- Header -->
+                  <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Comunicate con nosotros:</h3>
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Tu nombre y apellido</label>
+                      </div>
+                    
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Tu e-mail</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    
+
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Asunto del mensaje</label>
+                      </div>
+                    </div>
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
+                        <label for="message">Tu mensaje</label>
+                      </div>
+                    </div>
+                    
+                    <!-- Grid column -->
+
+                  </div>
+                  <!-- Grid row -->
+                </form> 
+                
+                </div>
+                <div class="status" id="status"></div>
+                <a class="btn-floating btn-lg blue" onclick="validateForm()">
+                  <i class="far fa-paper-plane"></i>
+                </a>
               </div>
-              <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
-              </div>
+              <!-- Grid column -->
+
+
+
             </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas
-                  easily.
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn
-                  how to use MDB as well as other technologies.</p>
-              </div>
-            </div>
-            <!--/Third row-->
+            <!-- Grid row -->
 
           </div>
-          <!--/Grid column-->
+          <!-- Form with header -->
 
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
+        </section>
+        <!-- Section: Contact v.3 -->
 
-            <p class="h5 text-center mb-4">Watch our &quot;5 min Quick Start&quot; tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-            </div>
-          </div>
-          <!--/Grid column-->
+      </div>
+
+  
+    </main>
+  
+
+ 
+    <!--Main Layout-->
+  
+  <!--Footer-->
+       <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+        <hr class="my-4">
+
+
+        <!-- Social icons -->
+        <div class="pb-4">
+            <a href="https://www.facebook.com/qauaq" target="_blank">
+                <i class="fab fa-facebook-f mr-3"></i>
+            </a>
+
+            <a href="https://www.instagram.com/qauaq" target="_blank">
+                <i class="fab fa-instagram mr-3"></i>
+            </a>
+
+            <a href="https://www.youtube.com/qauaq" target="_blank">
+                <i class="fab fa-youtube mr-3"></i>
+            </a>
+
+            <a href="https://pinterest.com/qauaq" target="_blank">
+                <i class="fab fa-pinterest mr-3"></i>
+            </a>
+            
 
         </div>
-        <!--/Grid row-->
+        <!-- Social icons -->
 
-      </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn&apos;t matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
-                  looks great on each screen.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
-          </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
-                  easily adjust each component to suit your needs.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            &#xA9; 2020 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> Qauaq.com </a>
         </div>
-        <!--/First row-->
+        <!--/.Copyright-->
 
-      </section>
-      <!--Section: Not enough-->
+    </footer>
+    <!--/.Footer-->
 
-      <hr class="mb-5">
+  
+  
+    <!-- SCRIPTS -->
+  
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+  
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+  
+    <script src="https:maps.google.com/maps/api/js"></script>
+  
+    <script type="text/javascript">
+      /* WOW.js init */
+      new WOW().init();
+  
+      //  MDB Lightbox Init
+      $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+      });
+  
+      //  Tooltips Initialization
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+  
+    </script>
+    <script>
+      //  Material Select Initialization
+      $(document).ready(function () {
+        $('.mdb-select').material_select();
+      });
+  
+    </script>
+  
+    <script>
+      //  SideNav Initialization
+      $(".button-collapse").sideNav();
+  
+    </script>
+  
+      <!--Custom scripts-->
+      <script>
 
-      <!--Section: More-->
-      <section>
+        function validateForm() {
+            var x =  document.getElementById('name').value;
+             if (x == "") {
+                 document.getElementById('status').innerHTML = "Name cannot be empty";
+                 return false;
+             }
+            x =  document.getElementById('email').value;
+             if (x == "") {
+                 document.getElementById('status').innerHTML = "Email cannot be empty";
+                 return false;
+             } else {
+                 var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                 if(!re.test(x)){
+                     document.getElementById('status').innerHTML = "Email format invalid";
+                     return false;
+                 }
+             }
+             x =  document.getElementById('subject').value;
+             if (x == "") {
+                 document.getElementById('status').innerHTML = "Subject cannot be empty";
+                 return false;
+             }
+             x =  document.getElementById('message').value;
+             if (x == "") {
+                 document.getElementById('status').innerHTML = "Message cannot be empty";
+                 return false;
+             }
+            document.getElementById('status').innerHTML = "Sending...";
+            document.getElementById('contact-form').submit();
+        
+        }
+            </script>
+  
+  
+  </body>
+  
+  </html>
 
-        <h2 class="my-5 h3 text-center">...and even more</h2>
-
-        <!--First row-->
-        <div class="row features-small mt-5 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fab fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2 pl-3">
-                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
-                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-level-up-alt fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
-                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="far fa-comments fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Active community</h5>
-                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
-                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with
-                  it.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/First row-->
-
-        <!--Second row-->
-        <div class="row features-small mt-4 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
-                  well as modules for CSS (SASS files) and JS.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Technical support</h5>
-                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to contact us.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="far fa-file-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can&apos;t wait until you compile them.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/Second row-->
-
-      </section>
-      <!--Section: More-->
-
-    </div>
-  </main>
-  <!--Main layout-->
