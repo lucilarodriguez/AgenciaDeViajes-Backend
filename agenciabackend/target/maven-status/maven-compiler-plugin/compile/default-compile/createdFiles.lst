@@ -2,6 +2,7 @@ com\example\demo\entidades\Direccion.class
 com\example\demo\entidades\Hotel.class
 com\example\demo\entidades\Producto.class
 com\example\demo\servicios\UsuarioService.class
+com\example\demo\errores\ErrorServicio.class
 com\example\demo\repositorios\ProductoRepositorio.class
 com\example\demo\servicios\DetalleReservaService.class
 com\example\demo\entidades\Reserva.class
