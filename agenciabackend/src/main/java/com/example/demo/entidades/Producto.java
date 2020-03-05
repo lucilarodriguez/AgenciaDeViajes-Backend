@@ -17,6 +17,10 @@ public class Producto implements Serializable{
    private Integer id;
    private String nombre;
    private String descripcion;
+   private String encabezado;
+   private String duracion;
+   private String maximo;
+   
    @ManyToOne
    private Categoria categoria;
    private double precio;
@@ -24,12 +28,15 @@ public class Producto implements Serializable{
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String descripcion, Categoria categoria, double precio) {
+    public Producto(Integer id, String nombre, String descripcion, Categoria categoria, double precio,String encabezado,String maximo, String duracion) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.categoria = categoria;
         this.precio = precio;
+        this.encabezado = encabezado;
+        this.duracion = duracion;
+        this.maximo = maximo;
     }
 
     public Integer getId() {
@@ -43,6 +50,16 @@ public class Producto implements Serializable{
     public String getNombre() {
         return nombre;
     }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -71,6 +88,23 @@ public class Producto implements Serializable{
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    public String getEncabezado() {
+        return encabezado;
+    }
+
+    public void setEncabezado(String encabezado) {
+        this.encabezado = encabezado;
+    }
+
+    public String getMaximo() {
+        return maximo;
+    }
+
+    public void setMaximo(String maximo) {
+        this.maximo = maximo;
+    }
+    
    
    
 }
