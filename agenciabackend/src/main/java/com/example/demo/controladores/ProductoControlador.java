@@ -9,6 +9,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -18,12 +19,21 @@ public class ProductoControlador {
     @Autowired
     private ProductoService productoService;
     
+    
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/productos")
     public List<Producto> index(ModelMap modelo) {
         List<Producto> productos = productoService.obtenerProductos();
         
         return productos;
+    }
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("/producto")
+    public Producto obtenerProducto(@RequestParam(required = true, value="id")Integer id) {
+        
+        Producto producto = productoService.obtenerProducto(id);
+        
+        return producto;
     }
     
     

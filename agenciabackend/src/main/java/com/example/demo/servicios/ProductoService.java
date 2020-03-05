@@ -18,4 +18,8 @@ public class ProductoService {
         return productoRepositorio.obtenerProductos();
         
     }
+    
+    public Producto obtenerProducto(Integer id){
+        return productoRepositorio.obtenerProducto(id);
+    }
 }
