@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -21,11 +22,26 @@ import org.springframework.web.multipart.MultipartFile;
 public class UsuarioService {
     @Autowired
     private ProductoRepositorio productoRepositorio;
+    @Autowired
     private UsuarioRepositorio usuarioRepositorio;
     
+@Transactional  
+    public void Registrar( String nombre, String apellido, String mail, String dni, Integer telefono) throws ErrorService{
+        
+        
+        validar(nombre, apellido, mail, dni, telefono);
+        Usuario usuario = new Usuario();
+        usuario.setNombre(nombre);
+        usuario.setApellido(apellido);
+        usuario.setEmail(mail);
+        usuario.setTelefono(telefono);
 
+        usuarioRepositorio.save(usuario);
+        
+        //notificacionservice.enviar("Bienvenidos al Tinder pibes", "Tinder de animalitos",usuario.getMail());
+    }
     
-private void validar(String nombre, String apellido,String dni,Integer telefono, Integer pasajeros, String hotel, String direccion) throws ErrorServicio{
+private void validar(String nombre, String apellido,String mail,String dni,Integer telefono) throws ErrorServicio{
          if (nombre == null || nombre.isEmpty()){
              throw new ErrorServicio ("Es obligatorio completar el campo nombre.");
          }
@@ -38,16 +54,7 @@ private void validar(String nombre, String apellido,String dni,Integer telefono,
          if (telefono == null){
              throw new ErrorServicio ("Es obligatorio completar el campo de telefono");
          }
-         
-         if (pasajeros == null){
-             throw new ErrorServicio ("Indique la cantidad de personas");
-         }
-         if(hotel == null ){
-             throw  new ErrorServicio("Ingrese la dirección");
-         }
-         if(direccion == null ){
-             throw  new ErrorServicio("Debe Ingresar una dirección");
-         }
+    
      
      }
     

@@ -8,6 +8,9 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 
+@Repository
 public interface UsuarioRepositorio extends JpaRepository<Usuario, String>{
+    @Query("SELECT c FROM Usuario c WHERE c.mail = :mail")
+  public Usuario buscarpormail(@Param("mail") String mail);
    
 }
